@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Vida Acessível: textos sobre mobilidade, comunicação, linguagem simples e vida digital acessível.">
+  <title>Início – Vida Acessível</title>
+  <link rel="stylesheet" href="css/estilo.css">
+  <script src="js/app.js"></script>
+</head>
+<body>
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="topo">
+    <div class="miolo faixa">
+      <a class="marca" href="index.html">
+        <svg viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+          <circle cx="24" cy="24" r="22" fill="none" stroke="currentColor" stroke-width="3"/>
+          <circle cx="24" cy="12" r="4" fill="currentColor"/>
+          <path d="M12 19h24M24 19v12M24 31l-7 10M24 31l7 10" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+        <span>Vida Acessível</span>
+      </a>
+      <div id="ajustes" class="ajustes" role="group" aria-label="Ajustes de leitura" hidden>
+        <button type="button" id="btn-menos" aria-label="Diminuir texto">A−</button>
+        <button type="button" id="btn-mais" aria-label="Aumentar texto">A+</button>
+        <button type="button" id="btn-tema" aria-pressed="false">Tema escuro</button>
+        <button type="button" id="btn-espaco" aria-pressed="false">Mais espaçamento</button>
+        <button type="button" id="btn-reset">Restaurar</button>
+      </div>
+    </div>
+    <nav class="menu" aria-label="Menu principal">
+      <ul>
+        <li><a href="index.html" aria-current="page">Início</a></li>
+        <li><a href="mobilidade.html">Mobilidade</a></li>
+        <li><a href="comunicacao.html">Comunicação</a></li>
+        <li><a href="cognitiva.html">Linguagem simples</a></li>
+        <li><a href="vida-digital.html">Vida digital</a></li>
+        <li><a href="checklist.html">Checklist e direitos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <p id="aviso" class="escondido" role="status" aria-live="polite"></p>
+
+  <main id="conteudo" tabindex="-1">
+    <div class="miolo">
+      <section class="destaque-inicial" aria-labelledby="titulo">
+        <h1 id="titulo">Acessibilidade começa nas pequenas coisas</h1>
+        <p>
+          Um corredor livre, uma legenda bem feita, um texto sem palavras difíceis, um botão que dá para
+          apertar com o teclado. Pequenas decisões do dia a dia decidem se uma pessoa consegue ou não
+          participar.
+        </p>
+        <p>
+          Aqui você encontra artigos curtos sobre situações reais. O próprio site foi feito para ser
+          acessível, então você pode testar tudo na prática.
+        </p>
+        <p><a class="botao" href="mobilidade.html">Ler o primeiro artigo</a></p>
+      </section>
+
+      <section aria-labelledby="titulo-artigos">
+        <h2 id="titulo-artigos">O que você vai encontrar</h2>
+        <ul class="grade">
+          <li class="cartao">
+            <h3><a href="mobilidade.html">Mobilidade</a></h3>
+            <p>Calçadas, transporte, vagas e como oferecer ajuda sem constranger.</p>
+          </li>
+          <li class="cartao">
+            <h3><a href="comunicacao.html">Comunicação</a></h3>
+            <p>Libras, legendas, audiodescrição e dicas de conversa respeitosa.</p>
+          </li>
+          <li class="cartao">
+            <h3><a href="cognitiva.html">Linguagem simples</a></h3>
+            <p>Como escrever e organizar informação para que mais gente entenda.</p>
+          </li>
+          <li class="cartao">
+            <h3><a href="vida-digital.html">Vida digital</a></h3>
+            <p>Celular, banco, compras online e um teste rápido para sites.</p>
+          </li>
+          <li class="cartao">
+            <h3><a href="checklist.html">Checklist e direitos</a></h3>
+            <p>Verifique sua casa, escola ou site e conheça as leis principais.</p>
+          </li>
+        </ul>
+      </section>
+
+      <div class="aviso-caixa">
+        <p><strong>Dica:</strong> use os botões do topo para mudar o tamanho do texto, ligar o tema escuro
+        ou ampliar o espaçamento entre letras e linhas. Suas escolhas ficam salvas neste navegador.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="rodape">
+    <div class="miolo">
+      <p>Projeto acadêmico de Engenharia de Software – desenvolvimento web acessível.</p>
+      <p><a href="#conteudo">Voltar ao topo da página</a></p>
+    </div>
+  </footer>
+</body>
+</html>

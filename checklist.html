@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Checklist interativo de acessibilidade para casa, escola e sites, além de leis principais e fontes.">
+  <title>Checklist e direitos – Vida Acessível</title>
+  <link rel="stylesheet" href="css/estilo.css">
+  <script src="js/app.js"></script>
+</head>
+<body>
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="topo">
+    <div class="miolo faixa">
+      <a class="marca" href="index.html">
+        <svg viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+          <circle cx="24" cy="24" r="22" fill="none" stroke="currentColor" stroke-width="3"/>
+          <circle cx="24" cy="12" r="4" fill="currentColor"/>
+          <path d="M12 19h24M24 19v12M24 31l-7 10M24 31l7 10" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+        <span>Vida Acessível</span>
+      </a>
+      <div id="ajustes" class="ajustes" role="group" aria-label="Ajustes de leitura" hidden>
+        <button type="button" id="btn-menos" aria-label="Diminuir texto">A−</button>
+        <button type="button" id="btn-mais" aria-label="Aumentar texto">A+</button>
+        <button type="button" id="btn-tema" aria-pressed="false">Tema escuro</button>
+        <button type="button" id="btn-espaco" aria-pressed="false">Mais espaçamento</button>
+        <button type="button" id="btn-reset">Restaurar</button>
+      </div>
+    </div>
+    <nav class="menu" aria-label="Menu principal">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="mobilidade.html">Mobilidade</a></li>
+        <li><a href="comunicacao.html">Comunicação</a></li>
+        <li><a href="cognitiva.html">Linguagem simples</a></li>
+        <li><a href="vida-digital.html">Vida digital</a></li>
+        <li><a href="checklist.html" aria-current="page">Checklist e direitos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <p id="aviso" class="escondido" role="status" aria-live="polite"></p>
+
+  <main id="conteudo" tabindex="-1">
+    <div class="miolo">
+      <h1>Checklist e direitos</h1>
+
+      <section aria-labelledby="titulo-check">
+        <h2 id="titulo-check">Checklist de acessibilidade</h2>
+        <p>
+          Marque o que já existe no ambiente que você está avaliando. Seu progresso fica salvo neste
+          navegador. Os itens desmarcados são oportunidades de melhoria.
+        </p>
+
+        <div id="checklist">
+          <fieldset>
+            <legend>Em casa ou na escola</legend>
+            <div class="item-check"><input type="checkbox" id="c1"><label for="c1">As passagens são livres e têm largura suficiente para uma cadeira de rodas.</label></div>
+            <div class="item-check"><input type="checkbox" id="c2"><label for="c2">Há entrada sem degraus ou com rampa em boas condições.</label></div>
+            <div class="item-check"><input type="checkbox" id="c3"><label for="c3">A iluminação é boa e não há tapetes soltos que causem tropeços.</label></div>
+            <div class="item-check"><input type="checkbox" id="c4"><label for="c4">Avisos importantes têm letras grandes e contraste forte.</label></div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Em um site ou aplicativo</legend>
+            <div class="item-check"><input type="checkbox" id="c5"><label for="c5">Tudo pode ser usado apenas com o teclado e o foco é visível.</label></div>
+            <div class="item-check"><input type="checkbox" id="c6"><label for="c6">As imagens importantes têm texto alternativo.</label></div>
+            <div class="item-check"><input type="checkbox" id="c7"><label for="c7">Os vídeos têm legendas e, se possível, transcrição.</label></div>
+            <div class="item-check"><input type="checkbox" id="c8"><label for="c8">Os formulários têm rótulos e mensagens de erro claras.</label></div>
+            <div class="item-check"><input type="checkbox" id="c9"><label for="c9">O texto tem bom contraste e pode ser ampliado em 200% sem perder conteúdo.</label></div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Na comunicação</legend>
+            <div class="item-check"><input type="checkbox" id="c10"><label for="c10">Os textos usam linguagem simples, com frases curtas.</label></div>
+            <div class="item-check"><input type="checkbox" id="c11"><label for="c11">As informações importantes não dependem apenas de som ou apenas de cor.</label></div>
+          </fieldset>
+        </div>
+
+        <p id="progresso-texto" role="status"></p>
+        <p><progress id="barra" value="0" max="11" aria-label="Progresso do checklist"></progress></p>
+        <p><button type="button" id="btn-limpar" class="botao">Limpar marcações</button></p>
+      </section>
+
+      <section aria-labelledby="titulo-leis">
+        <h2 id="titulo-leis">Leis e direitos no Brasil</h2>
+        <dl>
+          <dt>Lei nº 13.146/2015 (Lei Brasileira de Inclusão)</dt>
+          <dd>Também chamada de Estatuto da Pessoa com Deficiência. Trata de saúde, educação, trabalho, transporte e acessibilidade, inclusive na internet.</dd>
+
+          <dt>Lei nº 10.098/2000</dt>
+          <dd>Estabelece normas gerais para promover a acessibilidade de pessoas com deficiência ou mobilidade reduzida.</dd>
+
+          <dt>Lei nº 10.436/2002</dt>
+          <dd>Reconhece a Libras como meio legal de comunicação e expressão.</dd>
+
+          <dt>Lei nº 11.126/2005</dt>
+          <dd>Garante à pessoa com deficiência visual o direito de ingressar e permanecer em locais com o cão-guia.</dd>
+        </dl>
+
+        <p class="aviso-caixa">
+          <strong>Encontrou uma barreira ou teve um direito negado?</strong> Procure a ouvidoria do órgão ou
+          empresa, o Ministério Público ou a Defensoria Pública. Denúncias de violação de direitos humanos
+          também podem ser feitas pelo Disque 100. Confirme os canais atuais nos sites oficiais.
+        </p>
+      </section>
+
+      <section aria-labelledby="titulo-fontes">
+        <h2 id="titulo-fontes">Fontes para estudar</h2>
+        <ul>
+          <li><a href="https://www.w3.org/WAI/standards-guidelines/wcag/pt-br/">WCAG – Diretrizes de Acessibilidade para Conteúdo Web (W3C)</a></li>
+          <li><a href="https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/acessibilidade-digital">Acessibilidade digital – Governo Federal (eMAG)</a></li>
+          <li><a href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13146.htm">Lei nº 13.146/2015 no site do Planalto</a></li>
+          <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/Accessibility">Acessibilidade – MDN Web Docs</a></li>
+        </ul>
+        <p>Os textos deste site são de autoria própria, escritos para esta atividade com base nas fontes acima.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="rodape">
+    <div class="miolo">
+      <p>Projeto acadêmico de Engenharia de Software – desenvolvimento web acessível.</p>
+      <p><a href="#conteudo">Voltar ao topo da página</a></p>
+    </div>
+  </footer>
+</body>
+</html>

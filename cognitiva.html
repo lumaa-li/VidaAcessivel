@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Acessibilidade cognitiva: linguagem simples, organização da informação e cuidados com sobrecarga sensorial.">
+  <title>Linguagem simples – Vida Acessível</title>
+  <link rel="stylesheet" href="css/estilo.css">
+  <script src="js/app.js"></script>
+</head>
+<body>
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="topo">
+    <div class="miolo faixa">
+      <a class="marca" href="index.html">
+        <svg viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+          <circle cx="24" cy="24" r="22" fill="none" stroke="currentColor" stroke-width="3"/>
+          <circle cx="24" cy="12" r="4" fill="currentColor"/>
+          <path d="M12 19h24M24 19v12M24 31l-7 10M24 31l7 10" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+        <span>Vida Acessível</span>
+      </a>
+      <div id="ajustes" class="ajustes" role="group" aria-label="Ajustes de leitura" hidden>
+        <button type="button" id="btn-menos" aria-label="Diminuir texto">A−</button>
+        <button type="button" id="btn-mais" aria-label="Aumentar texto">A+</button>
+        <button type="button" id="btn-tema" aria-pressed="false">Tema escuro</button>
+        <button type="button" id="btn-espaco" aria-pressed="false">Mais espaçamento</button>
+        <button type="button" id="btn-reset">Restaurar</button>
+      </div>
+    </div>
+    <nav class="menu" aria-label="Menu principal">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="mobilidade.html">Mobilidade</a></li>
+        <li><a href="comunicacao.html">Comunicação</a></li>
+        <li><a href="cognitiva.html" aria-current="page">Linguagem simples</a></li>
+        <li><a href="vida-digital.html">Vida digital</a></li>
+        <li><a href="checklist.html">Checklist e direitos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <p id="aviso" class="escondido" role="status" aria-live="polite"></p>
+
+  <main id="conteudo" tabindex="-1">
+    <div class="miolo">
+      <article>
+        <h1>Linguagem simples e acessibilidade cognitiva</h1>
+
+        <p>
+          Acessibilidade cognitiva trata de como as pessoas entendem, lembram e se organizam.
+          Ela ajuda quem tem dislexia, TDAH, autismo, deficiência intelectual, quem está aprendendo
+          português, pessoas idosas e qualquer um que esteja cansado ou com pressa.
+        </p>
+
+        <h2 id="linguagem-simples">Como escrever em linguagem simples</h2>
+        <ol>
+          <li>Comece pelo mais importante: o que a pessoa precisa saber ou fazer.</li>
+          <li>Use frases curtas, com uma ideia por vez.</li>
+          <li>Prefira palavras do dia a dia. Explique siglas e termos técnicos na primeira vez.</li>
+          <li>Use a voz ativa: "Pague a conta até sexta", e não "A conta deve ser paga".</li>
+          <li>Divida o texto em parágrafos curtos, com títulos e listas.</li>
+          <li>Use as mesmas palavras para as mesmas coisas, sem alternar termos.</li>
+        </ol>
+
+        <div class="rolagem">
+          <table>
+            <caption>Exemplos de antes e depois</caption>
+            <thead>
+              <tr>
+                <th scope="col">Texto difícil</th>
+                <th scope="col">Texto simples</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>O requerente deverá comparecer ao setor competente munido da documentação pertinente.</td>
+                <td>Vá ao setor de atendimento e leve seus documentos.</td>
+              </tr>
+              <tr>
+                <td>O prazo para a efetivação do pagamento expira no dia 10.</td>
+                <td>Pague até o dia 10.</td>
+              </tr>
+              <tr>
+                <td>Em caso de indisponibilidade do serviço, contate o suporte.</td>
+                <td>Se o serviço não funcionar, fale com o suporte.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2 id="ambientes">Ambientes e telas previsíveis</h2>
+        <p>
+          Algumas pessoas se cansam com excesso de estímulos. Barulho, luzes piscando, vídeos
+          que começam sozinhos e janelas que aparecem de repente atrapalham a concentração
+          e podem causar ansiedade ou desconforto. Boas práticas:
+        </p>
+        <ul>
+          <li>Evite animações automáticas e dê um botão para pausar.</li>
+          <li>Mantenha menus e botões sempre no mesmo lugar.</li>
+          <li>Dê tempo suficiente para ler e responder, ou permita ampliar o tempo.</li>
+          <li>Mostre claramente em qual etapa a pessoa está ("Passo 2 de 4").</li>
+          <li>Ofereça um ambiente tranquilo ou fones com abafamento em eventos longos.</li>
+        </ul>
+
+        <h2 id="perguntas">Perguntas frequentes</h2>
+
+        <details>
+          <summary>Linguagem simples é "infantilizar" o texto?</summary>
+          <p>Não. É escrever com clareza para um público amplo. Textos técnicos e jurídicos também podem ser claros.</p>
+        </details>
+
+        <details>
+          <summary>Por que usar fonte sem serifa e espaçamento maior?</summary>
+          <p>Letras bem definidas e espaços generosos entre linhas e letras reduzem o esforço de leitura, principalmente para quem tem dislexia ou baixa visão. Neste site, o botão "Mais espaçamento" ativa essa configuração.</p>
+        </details>
+
+        <details>
+          <summary>Isso ajuda só quem tem deficiência?</summary>
+          <p>Ajuda todo mundo. Pense em ler um aviso importante com pressa ou uma bula de remédio às duas da manhã.</p>
+        </details>
+
+        <p>Próximo artigo: <a href="vida-digital.html">Vida digital</a>.</p>
+      </article>
+    </div>
+  </main>
+
+  <footer class="rodape">
+    <div class="miolo">
+      <p>Projeto acadêmico de Engenharia de Software – desenvolvimento web acessível.</p>
+      <p><a href="#conteudo">Voltar ao topo da página</a></p>
+    </div>
+  </footer>
+</body>
+</html>
